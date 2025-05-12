@@ -25,7 +25,7 @@ jobs:
           EC2_USERNAME: ${{ secrets.EC2_USERNAME }}
         run: |
           mkdir -p ~/.ssh
-          echo "$SSH_PRIVATE_KEY" > ~/.ssh/private_key
+          echo $SSH_PRIVATE_KEY > ~/.ssh/private_key
           chmod 400 ~/.ssh/private_key
           cat > ~/.ssh/config << EOF
           Host ec2
