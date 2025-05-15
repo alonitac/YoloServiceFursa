@@ -15,4 +15,4 @@ jobs:
 
       - name: API Testing
         run: |
-         echo 'testing....'
+         exit 1
